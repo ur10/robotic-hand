@@ -14,6 +14,7 @@ void setup(){
   Wire.endTransmission(true);
   Serial.begin(9600);
 }
+int add()
 void loop(){
   Wire.beginTransmission(MPU_addr);
   Wire.write(0x3B);  // starting with register 0x3B (ACCEL_XOUT_H)
